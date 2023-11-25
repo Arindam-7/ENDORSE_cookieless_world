@@ -30,6 +30,9 @@ const userSchema = new mongoose.Schema({
   lname: String,
   email: String,
   password: String,
+},
+{
+  collection: 'rategain'
 });
 
 const User = new mongoose.model("User", userSchema);
